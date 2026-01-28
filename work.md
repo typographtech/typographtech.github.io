@@ -1,4 +1,7 @@
-# Our work
+---
+title: Work
+permalink: /work/
+---
 
-- repo 1
-- repo 2
+# Work
+Stuff here.
