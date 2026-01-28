@@ -1,2 +1,3 @@
-# typographtech.github.io
-The main website for typograph tech.
+# Typograph Tech Limited
+
+Typograph Tech Limited is a tech consulting company based in Hong Kong.
