@@ -1,0 +1,9 @@
+# Update these bios with actual information
+
+- name: Ari Moran
+  role: Chief Executive Officer
+  bio: Ari leads Typograph Tech's business strategy and client relationships. With extensive experience in technology and business development, Ari ensures our solutions align with client objectives and deliver measurable value.
+
+- name: Brent Moran
+  role: Chief Technology Officer
+  bio: Brent oversees Typograph Tech's technical direction and engineering excellence. With deep expertise in software architecture and data systems, Brent ensures our solutions are built on solid technical foundations.

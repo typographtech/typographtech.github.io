@@ -1,0 +1,94 @@
+{{ define "main" }}
+<header class="hero">
+    <nav class="nav">
+        <a href="/" class="nav-brand">
+        <img src="/images/tt_wordmark_nav_40x40.png" alt="Typograph Tech" height="40">
+    </a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero-content">
+        <h1>{{ .Site.Params.author }}</h1>
+        <p class="hero-tagline">{{ .Site.Params.description }}</p>
+        <p class="hero-location">Based in {{ .Site.Params.location }}</p>
+        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+</header>
+
+<main>
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                {{ range .Site.Data.services }}
+                <div class="service-card">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                {{ range .Site.Data.projects }}
+                <div class="project-card">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                    {{ if .tags }}
+                    <div class="tags">
+                        {{ range .tags }}
+                        <span class="tag">{{ . }}</span>
+                        {{ end }}
+                    </div>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                {{ range .Site.Data.team }}
+                <div class="team-card">
+                    <h3>{{ .name }}</h3>
+                    <p class="team-role">{{ .role }}</p>
+                    <p>{{ .bio }}</p>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Ready to discuss your project? Get in touch with us.</p>
+            <a href="mailto:{{ .Site.Params.contactEmail }}" class="btn btn-primary">
+                Email Us: {{ .Site.Params.contactEmail }}
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <p>&copy; {{ now.Year }} {{ .Site.Params.author }}. All rights reserved.</p>
+        <p>{{ .Site.Params.location }}</p>
+    </div>
+</footer>
+{{ end }}

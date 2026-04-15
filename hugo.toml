@@ -1,0 +1,19 @@
+baseURL = "https://typographtech.github.io/"
+languageCode = "en-us"
+title = "Typograph Tech Limited | IT Consulting Hong Kong"
+
+[params]
+  description = "Typograph Tech Limited is a Hong Kong-based IT consulting firm specializing in software development, technical consulting, and data analytics solutions."
+  keywords = "IT consulting, software development, Hong Kong, tech consulting, data analytics, custom software, technical advisory"
+  author = "Typograph Tech Limited"
+  location = "Hong Kong"
+  # Update this with your actual contact email
+  contactEmail = "hello@typographtech.com"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[build]
+  writeStats = true
