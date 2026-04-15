@@ -42,7 +42,7 @@
             <div class="projects-grid">
                 {{ range .Site.Data.projects }}
                 <div class="project-card">
-                    <h3>{{ .title }}</h3>
+                    <h3>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</h3>
                     <p>{{ .description }}</p>
                     {{ if .tags }}
                     <div class="tags">

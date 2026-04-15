@@ -6,23 +6,17 @@
 #     - Technology1
 #     - Technology2
 
-- title: Project Alpha
-  description: A scalable data pipeline solution for enterprise clients, processing millions of records daily with real-time analytics capabilities.
+- title: URL uptime webapp
+  description: A super simple URL uptime monitor that lets users keep an eye on their webservices with a realtime dashboard and email notifications.
+  url: https://healthcheck.it.com
   tags:
-    - Data Engineering
-    - Python
+    - Go
     - Cloud
 
-- title: Project Beta
-  description: Custom web application for streamlined business operations, featuring automated workflows and comprehensive reporting dashboards.
+- title: Mathesar
+  description: Our CTO, Brent, has been a maintainer on this open source database UI since its inception.
+  url: https://mathesar.org
   tags:
     - Web Development
-    - React
-    - Go
-
-- title: Project Gamma
-  description: Technical advisory engagement helping a growing startup architect their platform for scale and reliability.
-  tags:
-    - Consulting
-    - Architecture
-    - DevOps
+    - Python
+    - PostgreSQL

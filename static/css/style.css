@@ -206,6 +206,27 @@ h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
     margin-bottom: 1rem;
 }
 
+/* Project Links */
+.project-card {
+    position: relative;
+}
+
+.project-card h3 a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.project-card h3 a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.project-card:hover h3 a {
+    color: var(--color-accent);
+}
+
 /* Tags */
 .tags {
     display: flex;
