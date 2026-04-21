@@ -70,9 +70,10 @@ h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
 .nav-brand {
     display: flex;
     align-items: center;
+    color: white;
 }
 
-.nav-brand img {
+.nav-brand svg {
     height: 40px;
     width: auto;
 }
