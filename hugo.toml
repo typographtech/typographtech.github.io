@@ -2,6 +2,9 @@ baseURL = "https://typographtech.com/"
 languageCode = "en-us"
 title = "Typograph Tech Limited | IT Consulting Hong Kong"
 
+# Disable unused taxonomies (removes /categories/ and /tags/ from sitemap)
+disableKinds = ["taxonomy", "term"]
+
 [params]
   description = "Typograph Tech Limited is a Hong Kong-based IT consulting firm specializing in software development, technical consulting, and data analytics solutions."
   keywords = "IT consulting, software development, Hong Kong, tech consulting, data analytics, custom software, technical advisory"
