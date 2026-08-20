@@ -25,15 +25,51 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-<header class="hero">
-    <div class="hero-content">
-        <h1>{{ .Site.Params.author }}</h1>
-        <p class="hero-tagline">{{ .Site.Params.description }}</p>
-        <p class="hero-location">Based in {{ .Site.Params.location }}</p>
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-    </div>
-</header>
 
+<!-- Above the fold: hero + gallery fills exactly one viewport -->
+<div class="above-fold">
+    <section class="hero-compact">
+        <div class="hero-content">
+            <h1>Typograph Tech Limited</h1>
+            <p class="hero-blurb">
+                Specializing in Data pipelines, platform architecture, and systems integration.
+                We speak fluent engineering, Mandarin, and English.
+                Hard problems, bespoke solutions.
+                See how we can help.
+            </p>
+            <a href="mailto:{{ .Site.Params.contactEmail }}?subject=Book%20a%20discovery%20call" class="btn btn-discovery">
+                Book a discovery call
+            </a>
+        </div>
+    </section>
+
+    <section id="projects" class="gallery-section">
+        <div class="gallery-scroll" id="galleryScroll">
+            {{ range .Site.Data.projects }}
+            <div class="gallery-card">
+                <a href="{{ .url }}" class="gallery-screenshot-link" target="_blank" rel="noopener noreferrer">
+                    <div class="gallery-screenshot">
+                        {{ if .screenshot }}
+                        <img src="{{ .screenshot }}" alt="{{ .title }} screenshot" loading="lazy">
+                        {{ else }}
+                        <div class="gallery-placeholder">
+                            <span class="gallery-placeholder-title">{{ .title }}</span>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <p class="gallery-tagline">{{ .tagline }}</p>
+                </a>
+            </div>
+            {{ end }}
+        </div>
+        <div class="gallery-hint" aria-hidden="true">
+            <span class="gallery-hint-arrow">&#8594;</span>
+            <span class="gallery-hint-text">scroll</span>
+        </div>
+    </section>
+</div>
+
+<!-- Below the fold: scrollable sections -->
 <main>
     <!-- Services Section -->
     <section id="services" class="section">
@@ -50,30 +86,8 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section-alt">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                {{ range .Site.Data.projects }}
-                <div class="project-card">
-                    <h3>{{ if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</h3>
-                    <p>{{ .description }}</p>
-                    {{ if .tags }}
-                    <div class="tags">
-                        {{ range .tags }}
-                        <span class="tag">{{ . }}</span>
-                        {{ end }}
-                    </div>
-                    {{ end }}
-                </div>
-                {{ end }}
-            </div>
-        </div>
-    </section>
-
     <!-- Team Section -->
-    <section id="team" class="section">
+    <section id="team" class="section section-alt">
         <div class="container">
             <h2>Our Team</h2>
             <div class="team-grid">
@@ -89,7 +103,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact Us</h2>
             <p>Ready to discuss your project? Get in touch with us.</p>

@@ -2,21 +2,49 @@
 #
 # - title: Project Name
 #   description: Brief description of the project and its impact.
+#   tagline: A short one-line tag shown below the screenshot.
 #   tags:
 #     - Technology1
 #     - Technology2
 
 - title: URL uptime webapp
+  screenshot: /images/projects/healthcheckit.jpg
   description: A super simple URL uptime monitor that lets users keep an eye on their webservices with a realtime dashboard and email notifications.
-  url: https://healthcheck.it.com
+  tagline: Realtime monitoring, email alerts
+  url: https://healthcheckit.com
   tags:
     - Go
     - Cloud
 
 - title: Mathesar
+  screenshot: /images/projects/mathesar.png
   description: Our CTO, Brent, has been a maintainer on this open source database UI since its inception.
+  tagline: Open-source database UI
   url: https://mathesar.org
   tags:
     - Web Development
     - Python
     - PostgreSQL
+
+- title: CC Search
+  screenshot: /images/projects/ccsearch.jpg
+  description: A creative commons search tool for discovering openly licensed images, music, and media across multiple sources.
+  tagline: Search freely-licensed content
+  url: https://search.creativecommons.org
+  tags:
+    - Web Development
+    - Search Engine
+
+- title: Data Pipeline Automation
+  description: End-to-end data pipeline orchestration for a Hong Kong fintech client, handling millions of transactions daily.
+  tagline: Millions of txns, automated
+  tags:
+    - Python
+    - Data Engineering
+
+- title: Platform Modernization
+  description: Legacy system migration to cloud-native architecture with zero-downtime cutover for a regional logistics provider.
+  tagline: Zero-downtime cloud migration
+  tags:
+    - Cloud
+    - Systems Integration
