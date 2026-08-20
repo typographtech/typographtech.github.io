@@ -46,25 +46,44 @@
     <section id="projects" class="gallery-section">
         <div class="gallery-scroll" id="galleryScroll">
             {{ range .Site.Data.projects }}
-            <div class="gallery-card">
-                <a href="{{ .url }}" class="gallery-screenshot-link" target="_blank" rel="noopener noreferrer">
-                    <div class="gallery-screenshot">
-                        {{ if .screenshot }}
-                        <img src="{{ .screenshot }}" alt="{{ .title }} screenshot" loading="lazy">
-                        {{ else }}
-                        <div class="gallery-placeholder">
-                            <span class="gallery-placeholder-title">{{ .title }}</span>
-                        </div>
-                        {{ end }}
+            <div class="gallery-card" role="button" tabindex="0"
+                 data-title="{{ .title }}"
+                 data-screenshot="{{ .screenshot }}"
+                 data-description="{{ .description }}"
+                 data-tagline="{{ .tagline }}"
+                 data-url="{{ .url }}">
+                <div class="gallery-screenshot">
+                    {{ if .screenshot }}
+                    <img src="{{ .screenshot }}" alt="{{ .title }} screenshot" loading="lazy">
+                    {{ else }}
+                    <div class="gallery-placeholder">
+                        <span class="gallery-placeholder-title">{{ .title }}</span>
                     </div>
-                    <p class="gallery-tagline">{{ .tagline }}</p>
-                </a>
+                    {{ end }}
+                </div>
+                <p class="gallery-tagline">{{ .tagline }}</p>
             </div>
             {{ end }}
         </div>
         <div class="gallery-hint" aria-hidden="true">
             <span class="gallery-hint-arrow">&#8594;</span>
             <span class="gallery-hint-text">scroll</span>
+        </div>
+
+        <!-- Project Detail View -->
+        <div class="project-detail" id="projectDetail" aria-hidden="true">
+            <button type="button" class="project-detail-close" aria-label="Close project details">&times;</button>
+            <div class="project-detail-inner">
+                <div class="project-detail-media">
+                    <img src="" alt="" id="detailImage" loading="lazy">
+                </div>
+                <div class="project-detail-text">
+                    <h3 id="detailTitle"></h3>
+                    <p id="detailDescription"></p>
+                    <a href="" id="detailLink" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Visit Project &rarr;</a>
+                </div>
+            </div>
+            <div class="project-detail-swipe-hint" aria-hidden="true">Swipe down to close</div>
         </div>
     </section>
 </div>
