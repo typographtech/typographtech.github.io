@@ -714,11 +714,6 @@ h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
         display: block;
     }
 
-    .project-detail.active ~ .gallery-scroll,
-    .project-detail.active ~ .gallery-hint {
-        display: none;
-    }
-
     .project-detail-inner {
         flex-direction: column;
         gap: 1rem;
