@@ -1,9 +1,9 @@
 # Update these bios with actual information
 
-- name: Ari Moran
-  role: Chief Executive Officer
-  bio: Ari leads Typograph Tech's business strategy and client relationships. With extensive experience in technology and business development, Ari ensures our solutions align with client objectives and deliver measurable value.
+- name: Ariadne Moran
+  role: Director
+  bio: Ari spent three years building open-source network security software at Greenbone AG in Germany. She handles clients, scoping, and outreach, with technical depth from her mathematics and engineering background to ask the right questions, scope accurately, and translate between business needs and implementation. Fluent in English, Mandarin, Cantonese, with working knowledge of German and a bit of Latin on the side. Ari is the first point of contact for new engagements — reach her at ari@typographtech.com or book a discovery call.
 
 - name: Brent Moran
-  role: Chief Technology Officer
-  bio: Brent oversees Typograph Tech's technical direction and engineering excellence. With deep expertise in software architecture and data systems, Brent ensures our solutions are built on solid technical foundations.
+  role: Engineer
+  bio: Brent is a data and platform engineer with a decade of experience building pipelines over data his systems don't get to control. He built Metro AG's algorithmic pricing platform, processing point-of-sale data at country scale. He led CC Search's data engineering, working with the Smithsonian, Europeana, and national libraries, until its acquisition by Automattic. While at Creative Commons, he was the technical advisor of CC's position paper on AI and copyright, which was subsequently presented at the World Intellectual Property Forum. He is a co-founder and the technical lead of Mathesar, the open-source Postgres interface that works with your database instead of replacing it.
