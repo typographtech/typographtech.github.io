@@ -25,7 +25,7 @@ hugo              # Build static site to /public
 - `layouts/index.html` - Homepage template
 - `layouts/_default/baseof.html` - Base HTML template with SEO tags
 - `static/css/style.css` - Styling
-- `data/services.yaml` - Services content
+- `data/user_stories.yaml` - Selected Work user stories
 - `data/projects.yaml` - Projects content
 - `data/team.yaml` - Team bios
 - `.github/workflows/hugo.yml` - Deployment workflow

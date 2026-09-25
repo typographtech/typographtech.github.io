@@ -17,7 +17,7 @@ hugo
 ## Content Editing
 
 Edit content in these files:
-- `data/services.yaml` - Service offerings
+- `data/user_stories.yaml` - Selected Work user stories
 - `data/projects.yaml` - Featured projects
 - `data/team.yaml` - Team member bios
 - `hugo.toml` - Site settings (contact email, description)

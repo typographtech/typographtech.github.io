@@ -19,7 +19,7 @@
         <span></span>
     </button>
     <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
+        <li><a href="#selected-work">Selected Work</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -90,15 +90,17 @@
 
 <!-- Below the fold: scrollable sections -->
 <main>
-    <!-- Services Section -->
-    <section id="services" class="section">
+    <!-- Selected Work Section -->
+    <section id="selected-work" class="section">
         <div class="container">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                {{ range .Site.Data.services }}
-                <div class="service-card">
+            <h2>Selected Work</h2>
+            <div class="stories-grid">
+                {{ range .Site.Data.user_stories }}
+                <div class="story-card">
+                    <p class="story-client">{{ .client }}</p>
                     <h3>{{ .title }}</h3>
-                    <p>{{ .description }}</p>
+                    <p>{{ .story }}</p>
+                    <p class="story-outcome">{{ .outcome }}</p>
                 </div>
                 {{ end }}
             </div>

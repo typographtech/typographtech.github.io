@@ -1,0 +1,28 @@
+# User stories shown in the "Selected Work" section.
+# Each story has: client (label), title, story (narrative), outcome (one-liner).
+
+- client: Metro AG
+  title: Pricing at country scale
+  story: >
+    Metro AG, a multinational retailer, needed pricing that could keep pace with point-of-sale data
+    streaming in from stores across entire countries. Brent helped design and
+    build the company's algorithmic pricing platform, turning raw
+    transaction data into pricing decisions at scale.
+  outcome: Point-of-sale data processed at country scale.
+
+- client: Creative Commons
+  title: One search across the world's open collections
+  story: >
+    CC Search makes openly licensed images, music, and media discoverable
+    from a single place. Brent led data engineering, integrating providers
+    including the Smithsonian, Europeana, and national libraries into one
+    reliable index.
+  outcome: A dependable index spanning major open collections.
+
+- client: Mathesar
+  title: An interface that works with your database
+  story: >
+    Most database UIs solve the problem by owning your data. Not Mathesar. Brent is a co-founder and the technical
+    lead, taking the project from its first designs to a tool teams use to
+    manage real databases directly.
+  outcome: From first design to a maintained open-source product.

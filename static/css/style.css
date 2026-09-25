@@ -488,14 +488,14 @@ h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
 }
 
 /* Cards (legacy) */
-.services-grid,
+.stories-grid,
 .projects-grid,
 .team-grid {
     display: grid;
     gap: 2rem;
 }
 
-.services-grid {
+.stories-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -509,7 +509,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
     margin: 0 auto;
 }
 
-.service-card,
+.story-card,
 .project-card,
 .team-card {
     background: white;
@@ -519,17 +519,33 @@ h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
     transition: box-shadow 0.2s, transform 0.2s;
 }
 
-.service-card:hover,
+.story-card:hover,
 .project-card:hover,
 .team-card:hover {
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     transform: translateY(-4px);
 }
 
-.section-alt .service-card,
+.section-alt .story-card,
 .section-alt .project-card,
 .section-alt .team-card {
     background: white;
+}
+
+/* User Stories */
+.story-client {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.75rem;
+}
+
+.story-outcome {
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-top: 1.25rem;
 }
 
 /* Team (legacy) */
@@ -633,7 +649,7 @@ h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
         padding: 3rem 0;
     }
 
-    .service-card,
+    .story-card,
     .project-card,
     .team-card {
         padding: 1.5rem;
